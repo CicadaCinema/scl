@@ -26,7 +26,7 @@
 		// if we have returned from the strava oauth page
 		// TODO: make authentication persistent!! - use local storage?!
 		if (urlParams.has("code")) {
-			const authorisation_url = "http://localhost:8080/api/authenticate";
+			const authorisation_url = "https://scl-api.vercel.app/api/authenticate";
 
 			fetch(authorisation_url, {
 				method: "POST",

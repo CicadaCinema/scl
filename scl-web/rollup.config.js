@@ -58,7 +58,7 @@ export default {
 		// https://github.com/rollup/plugins/tree/master/packages/commonjs
 		// https://www.npmjs.com/package/@rollup/plugin-replace
 		replace({
-			'process.env.STRAVA_CLIENT_ID': "111111",
+			'process.env.STRAVA_CLIENT_ID': "75121",
 			__buildDate__: () => JSON.stringify(new Date()),
 			__buildVersion: 15
 		}),
