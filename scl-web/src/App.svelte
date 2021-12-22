@@ -50,7 +50,7 @@
 
 	function stravaOauthRedirect() {
 		// TODO: maybe not all these scopes are needed, but let's keep them here anyway for now
-		const stravaLoginUrl = `https://www.strava.com/oauth/authorize?client_id=${process.env.STRAVA_CLIENT_ID}&response_type=code&redirect_uri=http://localhost:5000/&approval_prompt=force&scope=activity:read,activity:read_all,read,read_all`;
+		const stravaLoginUrl = `https://www.strava.com/oauth/authorize?client_id=${process.env.STRAVA_CLIENT_ID}&response_type=code&redirect_uri=https://scl-web.vercel.app/&approval_prompt=force&scope=activity:read,activity:read_all,read,read_all`;
 		window.location.href = stravaLoginUrl;
 	}
 
